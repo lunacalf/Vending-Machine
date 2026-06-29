@@ -24,9 +24,9 @@ The diagram below details the structural interconnections, power distribution, a
 
 ---
 
-## FinTech Integration: Zero-API QR Payment Pipeline
+## QR Payment Pipeline
 
-To circumvent restrictive and costly bank-side Merchant API constraints, a secure serverless transaction verification pipeline was engineered via a decoupled asynchronous microservice model:
+To circumvent restrictive and costly bank-side Merchant API constraints, a transaction verification pipeline was engineered via a decoupled asynchronous microservice model:
 
 ![QR Payment Process Pipeline](images/QR_payment_process.png)
 
@@ -66,6 +66,15 @@ Administrator monitoring and manual replenishment are handled seamlessly via mob
 * **Dual-Tier Coin Vault Handling Architecture:** Leverages a custom mechanical assembly comprising dual independent servomotors (`SERVO_TOP` & `SERVO_BOTTOM`) to handle coin segregation. Coins linger in an initial verification tray; on payment completion, `coinKeep` retracts the primary shutter, dropping funds into the long-term vault box. If a cancellation signal is caught (`#` key) or payment overages happen, `coinReturn` coordinates an explicit sequential release cycle—dropping exact customer coin sets back out into the bin.
 
 ---
+
+## Physical System Implementation & Visual Media
+
+Here is the completed, fully assembled hardware prototype of the standalone vending machine system:
+
+| Front View (User Interface Area) | Back View (Internal Electromechanical Components) |
+| :---: | :---: |
+| ![Vending Machine Front View](images/front_view.jpg) | ![Vending Machine Back View](images/back_view.jpg) |
+| *Figure: Front panel showcasing the LCD interface, matrix keypad, multi-coin acceptor, and dynamic OLED payment screen.* | *Figure: Internal chamber detailing the servo-driven continuous product dispensing coils and centralized processor mounting layer.* |
 
 ## Repository Structure
 
