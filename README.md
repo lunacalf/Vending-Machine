@@ -73,7 +73,7 @@ Here is the completed, fully assembled hardware prototype of the standalone vend
 
 | Front View (User Interface Area) | Back View (Internal Electromechanical Components) |
 | :---: | :---: |
-| ![Vending Machine Front View](images/front_view.jpg) | ![Vending Machine Back View](images/back_view.jpg) |
+| ![Vending Machine Front View](images/front_view.png) | ![Vending Machine Back View](images/back_view.png) |
 | *Figure: Front panel showcasing the LCD interface, matrix keypad, multi-coin acceptor, and dynamic OLED payment screen.* | *Figure: Internal chamber detailing the servo-driven continuous product dispensing coils and centralized processor mounting layer.* |
 
 ## Repository Structure
